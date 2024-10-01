@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadpool & Wolverine</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo text--big">Deadpool & Wolverine</h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button" href="#">Alugue agora</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero__content">
+            <img class="hero__content__branding" src="./dist/images/logo.png" alt="">
+            <div class="hero__content__text">
+                <h2 class="title--big">CHEGANDO JUNTOS</h2>
+                <h4 class="text--big">Alugue o filme por 30 dias por apenas <strong>R$7,99</strong></h4>
+                <a href="#" class="hero__content__button">Alugue Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <main class="about__content">
+            <h2 class="title">SINOPSE</h2>
+            <strong class="disclaimer text--small">Não recomendado para menos de 18 anos</strong>
+            <p class="text">Deadpool & Wolverine reúne o icônico mercenário tagarela Wade Wilson (Ryan Reynolds) e o
+                poderoso mutante
+                Wolverine (Hugh Jackman) em uma aventura explosiva, escrita e produzida pelos mesmos talentos por trás
+                de Deadpool (2016) e Deadpool 2 (2018). Wade Wilson desfruta de um momento de aparente calma ao lado de
+                Vanessa (Morena Baccarin) e seus amigos e, em contra partida, Wolverine se recupera de seus ferimentos.
+                Um têm os seus caminhos cruzados com o outro, dando início a uma improvável aliança. Juntos, eles
+                enfrentam um inimigo formidável em comum, desencadeando uma jornada repleta de ação, humor e
+                reviravoltas surpreendentes. Deadpool & Wolverine promete ser uma aventura épica, cheia de referências
+                aos quadrinhos e momentos de pura adrenalina, proporcionando aos fãs uma experiência única e
+                inesquecível no universo dos super-heróis.</p>
+            <h2 class="title">TRAILER</h2>
+            <iframe width="1024" height="600" src="https://www.youtube.com/embed/JjnzxHdZtYY?si=v-s8U3CHjFxohOIx"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </main>
+
+        <aside class="sound-track">
+            <h2 class="title">TRILHA SONORA</h2>
+            <div class="audio-players">
+                <div class="audio-player">
+                    <audio id="audio1" src="./dist/audio/byebyebye.mp3"></audio>
+                    <div class="cover">
+                        <img id="cover1" src="./dist/images/sound-track/cover1.png" alt="Capa do Álbum">
+                    </div>
+                    <div class="info">
+                        <div class="track-name text--big" id="trackName1">Bye Bye Bye</div>
+                        <div class="artist-name text" id="artistName1">NSYNC</div>
+                        <div class="time-container">
+                            <span id="currentTime1">0:00</span> / <span id="duration1">0:00</span>
+                        </div>
+                        <div class="controls">
+                            <button id="play1" class="play-btn">
+                                <img src="./dist/images/sound-track/play.svg" alt="Play">
+                            </button>
+                            <button id="pause1" class="pause-btn" style="display: none;">
+                                <img src="./dist/images/sound-track/pause.svg" alt="Pause">
+                            </button>
+                            <input type="range" id="seekbar1" class="seekbar" value="0" min="0" max="100">
+                            <div class="volume-container">
+                                <button id="volumeBtn1" class="volume-button">
+                                    <img id="volumeIcon1" class="volume-icon" src="./dist/images/sound-track/volume.svg"
+                                        alt="Volume">
+                                </button>
+                                <input type="range" id="volume1" class="volume" value="100" min="0" max="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-player">
+                    <audio id="audio2" src="./dist/audio/like-a-prayer-choir-version.mp3"></audio>
+                    <div class="cover">
+                        <img id="cover2" src="./dist/images/sound-track/cover2.png" alt="Capa do Álbum">
+                    </div>
+                    <div class="info">
+                        <div class="track-name text--big" id="trackName2">Like a Prayer - Choir Version</div>
+                        <div class="artist-name text" id="artistName2">Madonna, Rob Simonsen</div>
+                        <div class="time-container">
+                            <span id="currentTime2">0:00</span> / <span id="duration2">0:00</span>
+                        </div>
+                        <div class="controls">
+                            <button id="play2" class="play-btn">
+                                <img src="./dist/images/sound-track/play.svg" alt="Play">
+                            </button>
+                            <button id="pause2" class="pause-btn" style="display: none;">
+                                <img src="./dist/images/sound-track/pause.svg" alt="Pause">
+                            </button>
+                            <input type="range" id="seekbar2" class="seekbar" value="0" min="0" max="100">
+                            <div class="volume-container">
+                                <button id="volumeBtn2" class="volume-button">
+                                    <img id="volumeIcon2" class="volume-icon" src="./dist/images/sound-track/volume.svg"
+                                        alt="Volume">
+                                </button>
+                                <input type="range" id="volume2" class="volume" value="100" min="0" max="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-player">
+                    <audio id="audio3" src="./dist/audio/glamorous.mp3"></audio>
+                    <div class="cover">
+                        <img id="cover3" src="./dist/images/sound-track/cover3.png" alt="Capa do Álbum">
+                    </div>
+                    <div class="info">
+                        <div class="track-name text--big" id="trackName3">Glamorous</div>
+                        <div class="artist-name text" id="artistName3">Fergie</div>
+                        <div class="time-container">
+                            <span id="currentTime3">0:00</span> / <span id="duration3">0:00</span>
+                        </div>
+                        <div class="controls">
+                            <button id="play3" class="play-btn">
+                                <img src="./dist/images/sound-track/play.svg" alt="Play">
+                            </button>
+                            <button id="pause3" class="pause-btn" style="display: none;">
+                                <img src="./dist/images/sound-track/pause.svg" alt="Pause">
+                            </button>
+                            <input type="range" id="seekbar3" class="seekbar" value="0" min="0" max="100">
+                            <div class="volume-container">
+                                <button id="volumeBtn3" class="volume-button">
+                                    <img id="volumeIcon3" class="volume-icon" src="./dist/images/sound-track/volume.svg"
+                                        alt="Volume">
+                                </button>
+                                <input type="range" id="volume3" class="volume" value="100" min="0" max="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-player">
+                    <audio id="audio4" src="./dist/audio/im-with-you.mp3"></audio>
+                    <div class="cover">
+                        <img id="cover4" src="./dist/images/sound-track/cover4.png" alt="Capa do Álbum">
+                    </div>
+                    <div class="info">
+                        <div class="track-name text--big" id="trackName4">I'm With You</div>
+                        <div class="artist-name text" id="artistName4">Avril Lavigne</div>
+                        <div class="time-container">
+                            <span id="currentTime4">0:00</span> / <span id="duration4">0:00</span>
+                        </div>
+                        <div class="controls">
+                            <button id="play4" class="play-btn">
+                                <img src="./dist/images/sound-track/play.svg" alt="Play">
+                            </button>
+                            <button id="pause4" class="pause-btn" style="display: none;">
+                                <img src="./dist/images/sound-track/pause.svg" alt="Pause">
+                            </button>
+                            <input type="range" id="seekbar4" class="seekbar" value="0" min="0" max="100">
+                            <div class="volume-container">
+                                <button id="volumeBtn4" class="volume-button">
+                                    <img id="volumeIcon4" class="volume-icon" src="./dist/images/sound-track/volume.svg"
+                                        alt="Volume">
+                                </button>
+                                <input type="range" id="volume4" class="volume" value="100" min="0" max="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-player">
+                    <audio id="audio5" src="./dist/audio/youre-the-one-that-i-want-from-grease.mp3"></audio>
+                    <div class="cover">
+                        <img id="cover5" src="./dist/images/sound-track/cover5.png" alt="Capa do Álbum">
+                    </div>
+                    <div class="info">
+                        <div class="track-name text--big" id="trackName5">You're The One That I Want (From "Grease")
+                        </div>
+                        <div class="artist-name text" id="artistName5">John Travolta, Olivia Newton-John</div>
+                        <div class="time-container">
+                            <span id="currentTime5">0:00</span> / <span id="duration5">0:00</span>
+                        </div>
+                        <div class="controls">
+                            <button id="play5" class="play-btn">
+                                <img src="./dist/images/sound-track/play.svg" alt="Play">
+                            </button>
+                            <button id="pause5" class="pause-btn" style="display: none;">
+                                <img src="./dist/images/sound-track/pause.svg" alt="Pause">
+                            </button>
+                            <input type="range" id="seekbar5" class="seekbar" value="0" min="0" max="100">
+                            <div class="volume-container">
+                                <button id="volumeBtn5" class="volume-button">
+                                    <img id="volumeIcon5" class="volume-icon" src="./dist/images/sound-track/volume.svg"
+                                        alt="Volume">
+                                </button>
+                                <input type="range" id="volume5" class="volume" value="100" min="0" max="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-player">
+                    <audio id="audio6" src="./dist/audio/iris.mp3"></audio>
+                    <div class="cover">
+                        <img id="cover6" src="./dist/images/sound-track/cover6.png" alt="Capa do Álbum">
+                    </div>
+                    <div class="info">
+                        <div class="track-name text--big" id="trackName6">Iris</div>
+                        <div class="artist-name text" id="artistName6">The Goo Goo Dolls</div>
+                        <div class="time-container">
+                            <span id="currentTime6">0:00</span> / <span id="duration6">0:00</span>
+                        </div>
+                        <div class="controls">
+                            <button id="play6" class="play-btn">
+                                <img src="./dist/images/sound-track/play.svg" alt="Play">
+                            </button>
+                            <button id="pause6" class="pause-btn" style="display: none;">
+                                <img src="./dist/images/sound-track/pause.svg" alt="Pause">
+                            </button>
+                            <input type="range" id="seekbar6" class="seekbar" value="0" min="0" max="100">
+                            <div class="volume-container">
+                                <button id="volumeBtn6" class="volume-button">
+                                    <img id="volumeIcon6" class="volume-icon" src="./dist/images/sound-track/volume.svg"
+                                        alt="Volume">
+                                </button>
+                                <input type="range" id="volume6" class="volume" value="100" min="0" max="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+    </section>
+
+    <section class="casting">
+        <nav class="casting__tabs">
+            <button data-tab-button="elenco"
+                class="title--small casting__tabs__button casting__tabs__button--is-active">
+                ELENCO
+            </button>
+            <button data-tab-button="dubladores" class="title--small casting__tabs__button">
+                DUBLADORES NO BRASIL
+            </button>
+        </nav>
+
+        <ul data-tab-id="elenco" class="casting__list casting__list--is-active">
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/ryan-reynolds.png" alt="Ryan Reynolds">
+                <h4 class="text--big">Ryan Reynolds</h4>
+                <p class="text">Wade Wilson / Deadpool</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/hugh-jackman.png" alt="Hugh Jackman">
+                <h4 class="text--big">Hugh Jackman</h4>
+                <p class="text">Logan / Wolverine</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/emma-corrin.png" alt="Emma Corrin">
+                <h4 class="text--big">Emma Corrin</h4>
+                <p class="text">Cassandra Nova</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/matthew-macfadyen.png" alt="Matthew Macfadyen">
+                <h4 class="text--big">Matthew Macfadyen</h4>
+                <p class="text">Senhor Paradox</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/dafne-keen.png" alt="Dafne Keen">
+                <h4 class="text--big">Dafne Keen</h4>
+                <p class="text">Laura / X-23</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/jennifer-garner.png" alt="Jennifer Garner">
+                <h4 class="text--big">Jennifer Garner</h4>
+                <p class="text">Elektra Natchios</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/wesley-snipes.png" alt="Wesley Snipes">
+                <h4 class="text--big">Wesley Snipes</h4>
+                <p class="text">Eric Brooks / Blade</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/channing-tatum.png" alt="Channing Tatum">
+                <h4 class="text--big">Channing Tatum</h4>
+                <p class="text">Remy LeBeau / Gambit</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/chris-evans.png" alt="Chris Evans">
+                <h4 class="text--big">Chris Evans</h4>
+                <p class="text">Johnny Storm / Tocha Humana</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/rob-delaney.png" alt="Rob Delaney">
+                <h4 class="text--big">Rob Delaney</h4>
+                <p class="text">Peter / Peterpool</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/leslie-uggams.png" alt="Leslie Uggams">
+                <h4 class="text--big">Leslie Uggams</h4>
+                <p class="text">Althea / AI Cega</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/morena-baccarin.png" alt="Morena Baccarin">
+                <h4 class="text--big">Morena Baccarin</h4>
+                <p class="text">Vanessa Carlysle</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/wunmi-mosaku.png" alt="Wunmi Mosaku">
+                <h4 class="text--big">Wunmi Mosaku</h4>
+                <p class="text">B - 15</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/aaron-stanford.png" alt="Aaron Stanford">
+                <h4 class="text--big">Aaron Stanford</h4>
+                <p class="text">John Alleroyce / Pyro</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/karan-soni.png" alt="Karan Soni">
+                <h4 class="text--big">Karan Soni</h4>
+                <p class="text">Dopinder</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/brianna-hildebrand.png" alt="Brianna Hildebrand">
+                <h4 class="text--big">Brianna Hildebrand</h4>
+                <p class="text">Ellie Phimister / Míssil Adolescente Megassônico</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/shiori-kutsuna.png" alt="Shiori Kutsuna">
+                <h4 class="text--big">Shiori Kutsuna</h4>
+                <p class="text">Yukio</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/stefan-kapicic.png" alt="Stefan Kapičić">
+                <h4 class="text--big">Stefan Kapičić</h4>
+                <p class="text">Piotr Rasputin / Colosso</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/lewis-tan.png" alt="Lewis Tan">
+                <h4 class="text--big">Lewis Tan</h4>
+                <p class="text">Shatterstar</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/tyler-mane.png" alt="Tyler Mane">
+                <h4 class="text--big">Tyler Mane</h4>
+                <p class="text">Victor Creed / Dentes-de-Sabre</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/jon-favreau.png" alt="Jon Favreau">
+                <h4 class="text--big">Jon Favreau</h4>
+                <p class="text">Happy Hogan</p>
+            </li>
+        </ul>
+
+        <ul data-tab-id="dubladores" class="casting__list">
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/reginaldo-primo.png" alt="Reginaldo Primo">
+                <h4 class="text--big">Reginaldo Primo</h4>
+                <p class="text">Wade Wilson / Deadpool</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/luiz-feier-motta.png" alt="Luiz Feier Motta">
+                <h4 class="text--big">Luiz Feier Motta</h4>
+                <p class="text">Logan / Wolverine</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/tarsila-amorim.png" alt="Tarsila Amorim">
+                <h4 class="text--big">Tarsila Amorim</h4>
+                <p class="text">Cassandra Nova</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/nestor-chiesse.png" alt="Nestor Chiesse">
+                <h4 class="text--big">Nestor Chiesse</h4>
+                <p class="text">Senhor Paradox</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/carol-roberto.png" alt="Carol Roberto">
+                <h4 class="text--big">Carol Roberto</h4>
+                <p class="text">Laura / X-23</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/fernanda-baronne.png" alt="Fernanda Baronne">
+                <h4 class="text--big">Fernanda Baronne</h4>
+                <p class="text">Elektra Natchios</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/marcio-simoes.png" alt="Márcio Simões">
+                <h4 class="text--big">Márcio Simões</h4>
+                <p class="text">Eric Brooks / Blade</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/marcos-souza.png" alt="Marcos Souza">
+                <h4 class="text--big">Marcos Souza</h4>
+                <p class="text">Remy LeBeau / Gambit</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/duda-espinoza.png" alt="Duda Espinoza">
+                <h4 class="text--big">Duda Espinoza</h4>
+                <p class="text">Johnny Storm / Tocha Humana</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/ricardo-juarez.png" alt="Ricardo Juarez">
+                <h4 class="text--big">Ricardo Juarez</h4>
+                <p class="text">Peter / Peterpool</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/marlene-costa.png" alt="Marlene Costa">
+                <h4 class="text--big">Marlene Costa</h4>
+                <p class="text">Althea / AI Cega</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/andrea-murucci.png" alt="Andrea Murucci">
+                <h4 class="text--big">Andrea Murucci</h4>
+                <p class="text">Vanessa Carlysle</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/raquel-marinho.png" alt="Raquel Marinho">
+                <h4 class="text--big">Raquel Marinho</h4>
+                <p class="text">B - 15</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/jose-leonardo.png" alt="José Leonardo">
+                <h4 class="text--big">José Leonardo</h4>
+                <p class="text">John Alleroyce / Pyro</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/rodrigo-antas.png" alt="Rodrigo Antas">
+                <h4 class="text--big">Rodrigo Antas</h4>
+                <p class="text">Dopinder</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/erika-menezes.png" alt="Erika Menezes">
+                <h4 class="text--big">Erika Menezes</h4>
+                <p class="text">Ellie Phimister / Míssil Adolescente Megassônico</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/bruna-laynes.png" alt="Bruna Laynes">
+                <h4 class="text--big">Bruna Laynes</h4>
+                <p class="text">Yukio</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/helio-ribeiro.png" alt="Hélio Ribeiro">
+                <h4 class="text--big">Hélio Ribeiro</h4>
+                <p class="text">Piotr Rasputin / Colosso</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/alexandre-drummond.png" alt="Alexandre Drummond">
+                <h4 class="text--big">Alexandre Drummond</h4>
+                <p class="text">Shatterstar</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/jorge-vasconcellos.png" alt="Jorge Vasconcellos">
+                <h4 class="text--big">Jorge Vasconcellos</h4>
+                <p class="text">Victor Creed / Dentes-de-Sabre</p>
+            </li>
+            <li class="casting__list__item">
+                <img src="./dist/images/casting/wilken-mazzei.png" alt="Wilken Mazzei">
+                <h4 class="text--big">Wilken Mazzei</h4>
+                <p class="text">Happy Hogan</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="gallery">
+        <h2 class="title--big">Galeria de Fotos</h2>
+        <ul class="gallery__list">
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem1.png" alt="Pintura de um gato" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem1.png" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem2.jpg" alt="Imagem de um flamingo" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem2.jpg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem3.jpg"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem3.jpg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem4.jpg"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem4.jpg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem5.jpg"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem5.jpg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem6.jpg"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem6.jpg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem7.png"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem7.png" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem8.jpeg"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem8.jpeg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem9.png"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem9.png" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem10.png"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem10.png" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem11.png"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem11.png" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem12.png"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem12.png" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem13.jpg"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem13.jpg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem14.jpg"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem14.jpg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem15.png"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem15.png" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+            <li class="gallery__list__item">
+                <img src="./dist/images/gallery/imagem16.jpg"
+                    alt="Imagem de um homem com dois filhotes de cachorro em uma sacola" />
+                <div class="overlay-imagem-link">
+                    <a href="./dist/images/gallery/imagem16.jpg" title="Ver imagem em tamanho real" target="_blank">
+                        Ver imagem em tamanho real
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p class="text--small">
+            © 2024 Disney e suas empresas afiliadas. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="./dist/js/header.js"></script>
+    <script src="./dist/js/player.js"></script>
+    <script src="./dist/js/tabs.js"></script>
+
+</body>
+
+</html>

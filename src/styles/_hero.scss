@@ -1,0 +1,64 @@
+@use 'variaveis';
+
+.hero {
+    background-image: url(../images/deadpool_wolverine_hero.png);
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: variaveis.$corFundoVermelho;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/deadpool_wolverine_hero.png);
+        background-color: variaveis.$corFundoVermelho;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: calc(50vw + 25px);
+    }
+
+    &__content {
+        padding: 0 60px;
+
+        &__branding {
+            @media (max-width: 768px) {
+            height: 150px;
+            }
+        }
+
+        &__text {
+            max-width: 720px;
+            text-align: center;
+
+            h4 {
+                margin: 180px 0 40px;
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                    margin: 60px 0 40px
+                }
+            }
+        }
+
+        &__button {
+            color: variaveis.$corFundoPreto;
+            background-color: variaveis.$corFundoAmarelo;
+            border: 5px solid variaveis.$corFundoPreto;
+            font-size: 44px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 4px;
+            padding: 8px 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+        
+            &:hover {
+                color: variaveis.$corTextos;
+                border-color: variaveis.$corTextos;
+            }
+        }
+    }
+}

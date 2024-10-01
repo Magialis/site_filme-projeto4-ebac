@@ -1,0 +1,11 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$corFundoPreto;
+    text-align: center;
+    padding: 40px 0;
+
+    @media (max-width: 768px) {
+        font-size: 8px;
+    }
+}

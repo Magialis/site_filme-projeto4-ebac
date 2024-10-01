@@ -1,0 +1,50 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$corFundoPreto;
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin: 5px;
+    }
+
+    &__links {
+        list-style: none;
+
+        &__item {
+            margin: 5px;
+        }
+    }
+
+    .button {
+        color: variaveis.$corFundoVermelho;
+        background-color: variaveis.$corFundoAmarelo;
+        border: 2px solid variaveis.$corFundoVermelho;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 4px;
+        padding: 8px 14px;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            
+        }
+
+        &:hover {
+            color: variaveis.$corTextos;
+            border-color: variaveis.$corTextos;
+        }
+    }
+}

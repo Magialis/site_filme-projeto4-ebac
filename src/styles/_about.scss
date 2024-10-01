@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.about {
+    display: flex;
+    flex-direction: row;
+    background-color: variaveis.$corFundoAmarelo;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    &__content{
+        flex: 1;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        @media (max-width: 768px) {
+            margin: 0 10px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            padding-top: 40px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        iframe {
+            padding-bottom: 40px;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+
